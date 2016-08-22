@@ -4,10 +4,9 @@
 
 ![](../images/tips/tips-006/0.png)
 
-
 ### 一、显示信息的命令
 
-```
+```js
 console.log('显示信息');
 console.info('信息');
 console.error('错误');
@@ -17,7 +16,6 @@ console.warn('警告');
 结果如下：
 
 ![](../images/tips/tips-006/1.png)
-
 
 ### 二：占位符
 
@@ -31,7 +29,7 @@ console.warn('警告');
 |`%o`|打印javascript对象，可以是整数、字符串以及JSON数据|
 |`%c`|打印内容定义样式|
 
-```
+```js
 console.log('%d年%d月%d日', 2016, 08, 18);
 console.log('字符：%s', 'world');
 console.log('浮点数：%f', 3.1415926);
@@ -47,7 +45,7 @@ console.log('%c this is red', 'color: red; font-size: 20px;');
 
 `console.group()` 和  `console.groupEnd()` 将信息分组显示。
 
-```
+```js
 console.log("This is the outer level");
 console.group();
 console.log("Level 2");
@@ -68,7 +66,7 @@ console.debug("Back to the outer level");
 
 `console.dir()` 可以显示一个对象所有的属性和方法。
 
-```
+```js
 const info = {
 	name: 'zmh7057',
 	age: 28,
@@ -87,7 +85,7 @@ console.log(info);
 
 `console.time()` 和 `console.timeEnd()`，用来显示代码的运行时间。
 
-```
+```js
 console.time('计时：');
 for(let i = 0; i < 1000; i++) {
 	for(let j = 0; j < 1000; j++) {
@@ -101,14 +99,11 @@ console.timeEnd('计时：');
 
 ![](../images/tips/tips-006/5.png)
 
-
 ### 六、console.profile()的性能分析
 
 性能分析（Profiler）就是分析程序各个部分的运行时间，找出瓶颈所在，使用的方法是`console.profile()`。
 
-
-
-```
+```js
 function all() {
 	for(let i = 0; i < 10; i++) {
 		funcA(1000);
@@ -134,7 +129,7 @@ console.profileEnd('性能分析：');
 
 `console.trace()` 用来追踪函数的调用轨迹。
 
-```
+```js
 foo();
 
 function foo() {
@@ -153,7 +148,7 @@ function foo() {
 
 `console.dirxml()`用来显示网页的某个节点（node）所包含的html/xml代码。
 
-```
+```js
 console.dirxml(document);
 ```
 
@@ -165,7 +160,7 @@ console.dirxml(document);
 
 `console.assert()`用来判断一个表达式或变量是否为真。如果结果为否，则在控制台输出一条相应信息，并且抛出一个异常。
 
-```
+```js
 function func(a, b) {
   console.assert(a>b, {"message":"a is not greater than b","a":a,"b":b});
 }
@@ -177,12 +172,11 @@ func(1, 2);
 
 ![](../images/tips/tips-006/9.png)
 
-
 ### 十、统计代码执行次数
 
 `console.count()` 当你想统计代码被执行的次数（方法非常实用）。
 
-```
+```js
 function greet() {
   console.count(user + '执行的次数：');
 }
@@ -202,10 +196,9 @@ greet();
 
 ![](../images/tips/tips-006/10.png)
 
-
 ### 十一、`console.table()`方法
 
-```
+```js
 console.table({
   "1471968000000": [
     {

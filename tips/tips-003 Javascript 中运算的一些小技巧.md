@@ -9,6 +9,7 @@
 1 % -2 // return 1
 ```
 取余时，当数据为负数时会报错
+
 ```js
 // bad
 function isOdd(n) {
