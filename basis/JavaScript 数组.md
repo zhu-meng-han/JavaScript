@@ -137,6 +137,7 @@ console.log(newArray2);   //[1, 2]
 <b>reduceRight</b> 的函数声明：`[].reduceRight( function(previousValue, currentValue, currentIndex, array) { … }, [initialValue]);`
 
 第一个参数是回调函数，有4个参数：
+
 * `previousValue`： 前一个值
 * `currentValue`： 当前值
 * `currentIndex`：当前索引
@@ -172,6 +173,7 @@ console.log(flat2); // [4, 5, 2, 3, 0, 1];
 函数声明：`[].slice(begin, [end])`。
 
 参数：
+
 * begin：开始复制的位置，需要注意的是，可以设负数。设负数表示从尾往前数几个位置开始复制。例如slice(-2)将从倒数第2个元素开始复制。另外需要注意的是，该参数虽未标注为可选，但实际上是可以省略的，省略的话默认为0。
 * end：可选，表示复制到该位置的前一个元素。例如slice(0,3)将得到前3个元素，但不包含第4个元素。不设的话默认复制到数组尾，即等于array.length。
 
@@ -192,6 +194,7 @@ var args = [].slice.call(arguments);
 函数声明：`[].splice(start, deleteCount, [item…])`。
 
 参数：
+
 * start：开始剥离的位置（可以设负数）。设负数表示从尾往前数几个位置开始剥离。例如splice (-2)将从倒数第2个元素开始剥离。
 * deleteCount：要剥离的元素个数，设0表示一个都不剥离。
 * [item...]：（可选），用于替换旧数组中被移除的元素
