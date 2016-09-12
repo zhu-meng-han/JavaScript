@@ -4,6 +4,7 @@
 * <a href="#js-03">JavaScript 流程控制语句</a>
 * <a href="#js-04">JavaScript 字符串函数</a>
 * <a href="#js-05">JavaScript 函数基础</a>
+* <a href="#js-06">window对象</a>
 
 
 ## <span id="js-00">JavaScript 变量</span>
@@ -29,3 +30,7 @@
 ## <span id="js-05">JavaScript 函数基础</span>
 
 ![](./思维导图_png/JavaScript函数基础.png)
+
+## <span id="js-06">Window 对象</span>
+
+![](./思维导图_png/window对象.png)
